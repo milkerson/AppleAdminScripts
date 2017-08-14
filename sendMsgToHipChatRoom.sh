@@ -2,7 +2,7 @@
 
 #
 # Name of Script: sendMessagetoHipChat
-# Description: This will send a passed in message to the Closed IT Chat room
+# Description: This will send a passed in message to the desired HipChat room.
 # Attribution: 
 # Created by Mike Wilkerson
 # Date created: 01 Feb 2017
