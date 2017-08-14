@@ -17,7 +17,7 @@ URL="https://hipchat.rgmadvisors.com/v2/room"
 
 if [ "$1" == "DEV" ]; then
 	ROOM_ID=9  # Desktop Support
-	AUTH_TOKEN=CdiaBD2bivgSLmiTC2TdiQbehl8Q42xrB27ZnSvp  # created for Dev in Desktop Support room
+	AUTH_TOKEN=  # created for Dev in Desktop Support room
 	MESSAGE=$2
 elif [ "$1" == "TIPS" ]; then
 	ROOM_ID=19  # Water Cooler Chat
