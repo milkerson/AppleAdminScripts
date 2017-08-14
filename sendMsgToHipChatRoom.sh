@@ -6,26 +6,30 @@
 # Attribution: 
 # Created by Mike Wilkerson
 # Date created: 01 Feb 2017
-# Last modified: 
-# Revision 0.2
+# Last modified: 14 Aug 2017
+# Revision 0.3
 #  
+# USAGE: Pass in room nickname ($1) followed by the message to pass in ($2).
+#
+
+# Further instructions for passing messages to rooms can be found at:
+# https://www.hipchat.com/docs/apiv2/auth
+
+URL="https://sub.yourdomain.com/v2/room"
 
 # Set the ROOM_ID & AUTH_TOKEN variables below.
-# Further instructions at https://www.hipchat.com/docs/apiv2/auth
 
-URL="https://hipchat.rgmadvisors.com/v2/room"
-
-if [ "$1" == "DEV" ]; then
-	ROOM_ID=9  # Desktop Support
-	AUTH_TOKEN=CdiaBD2bivgSLmiTC2TdiQbehl8Q42xrB27ZnSvp  # created for Dev in Desktop Support room
+if [ "$1" == "NICKNAME1" ]; then
+	ROOM_ID=X  # Replace X with the ROOM ID
+	AUTH_TOKEN=XXXXX  # Replace XXXXX with Auth token for room
 	MESSAGE=$2
-elif [ "$1" == "TIPS" ]; then
-	ROOM_ID=19  # Water Cooler Chat
-	AUTH_TOKEN=AIZa7Z1S7Wo40kW6KQ2o41QcON9GkFyphXAyf3ak  # created for Production server in Water Cooler Chat room
+elif [ "$1" == "NICKNAME2" ]; then
+	ROOM_ID=X  # Replace X with the ROOM ID
+	AUTH_TOKEN=XXXXX  # Replace XXXXX with Auth token for room
 	MESSAGE=$2
-elif [ "$1" == "IT" ]; then
-	ROOM_ID=8  # Closed IT Chat
-	AUTH_TOKEN=PFKy4V576U8ll6SrSsUGsP4ypuI6GpKJPf7wZmEG  # Created for Desktop tip of the day Integration
+elif [ "$1" == "NICKNAME3" ]; then
+	ROOM_ID=X  # Replace X with the ROOM ID
+	AUTH_TOKEN=XXXXX  # Replace XXXXX with Auth token for room
 	MESSAGE=$2
 fi
 
